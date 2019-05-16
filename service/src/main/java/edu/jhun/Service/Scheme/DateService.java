@@ -10,5 +10,5 @@ import java.util.List;
  */
 public interface DateService {
     int[] getSchemeRunTime(int schemeId);
-    List<OutValue> getDate(AttributeMessage atrr);
+    List<OutValue> getDate(String atrr);
 }

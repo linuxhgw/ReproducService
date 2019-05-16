@@ -7,5 +7,5 @@ import edu.jhun.bean.TimeDomainIndex;
  * Created by hgw on 2019/4/29.
  */
 public interface TimeDomainAnalysisService {
-    TimeDomainIndex getTimeDomainAnalysis(AttributeMessage atrr);
+    TimeDomainIndex getTimeDomainAnalysis(String atrr);
 }

@@ -21,7 +21,7 @@ public class TimeDomainController {
 
     @GetMapping("getTimeDomainAnalysis")
     TimeDomainIndex getTimeDomainAnalysis(@RequestParam("atrr") String atrr){
-        AttributeMessage parse= JSON.parseObject(atrr,AttributeMessage.class);
-        return timeDomainAnalysisService.getTimeDomainAnalysis(parse);
+
+        return timeDomainAnalysisService.getTimeDomainAnalysis(atrr);
     }
 }

@@ -9,6 +9,7 @@ import edu.jhun.bean.AttributeMessage;
 import edu.jhun.bean.OutValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -31,9 +32,9 @@ public class DateController {
        return dateService.getSchemeRunTime(schemeId);
     }
 
-    @GetMapping("getDate")
-    List<OutValue> getDate(@RequestParam("atrr") String  atrr){
-         AttributeMessage parse= JSON.parseObject(atrr,AttributeMessage.class);
-        return   stepValueDao.getvalue(parse);
+    @GetMapping(value = "getDate",produces = "application/json; utf-8")
+    List<OutValue> getDate(@RequestParam("atrr") String  atrr ){
+
+        return   stepValueDao.getvalue(atrr);
     }
 }

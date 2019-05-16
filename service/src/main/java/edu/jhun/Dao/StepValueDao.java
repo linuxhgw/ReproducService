@@ -17,7 +17,8 @@ public class StepValueDao {
     @Autowired
     DateMapper dateMapper;
 
-    public List<OutValue> getvalue(AttributeMessage attributeMessage) {
+    public List<OutValue> getvalue(String atrr) {
+        AttributeMessage attributeMessage= JSON.parseObject(atrr,AttributeMessage.class);
         List<OutValue> date = dateMapper.getDate(attributeMessage);
         for (int i = 0; i < date.size(); i++) {
             String outPutJson = date.get(i).getOutPut();

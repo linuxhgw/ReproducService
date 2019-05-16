@@ -7,5 +7,5 @@ import edu.jhun.bean.BaseIndex;
  * Created by hgw on 2019/4/29.
  */
 public interface BaseAnalysisService {
-     BaseIndex getBaseAnalysis(AttributeMessage atrr);
+     BaseIndex getBaseAnalysis(String atrr);
 }

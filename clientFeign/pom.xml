@@ -51,11 +51,12 @@
 			<artifactId>mybatis</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
-        </dependency>
+
+		<dependency>
+			<groupId>edu.jhun</groupId>
+			<artifactId>service-client</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
     </dependencies>
 
 	<dependencyManagement>

@@ -26,8 +26,11 @@ public class ImpDateService implements DateService {
         return dateMapper.getSchemeRunTime(schemeId);
     }
 
+
+
     @Override
-    public List<OutValue> getDate(AttributeMessage atrr) {
+    public List<OutValue> getDate(String  atrr) {
+
         return stepValueDao.getvalue(atrr) ;
     }
 }

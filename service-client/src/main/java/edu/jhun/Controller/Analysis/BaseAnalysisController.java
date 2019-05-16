@@ -16,9 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class BaseAnalysisController {
     @Autowired
     BaseAnalysisService baseService;
-    @GetMapping("getBaseAnalysis")
+    @GetMapping("/getBaseAnalysis")
     BaseIndex getBaseAnalysis(@RequestParam("atrr") String atrr){
-        AttributeMessage parse= JSON.parseObject(atrr,AttributeMessage.class);
-        return baseService.getBaseAnalysis(parse);
+
+        BaseIndex baseAnalysis = baseService.getBaseAnalysis(atrr);
+        return baseAnalysis;
     }
 }

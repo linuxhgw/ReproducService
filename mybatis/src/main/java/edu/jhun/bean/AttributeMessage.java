@@ -10,6 +10,7 @@ public class AttributeMessage {
     public int schemeId;
     public int mumberId;
     public int attributeId;
+    public String attributeName;
     public int startUp;
     public int endUp;
     public int runTime;
@@ -17,9 +18,10 @@ public class AttributeMessage {
     @Override
     public String toString() {
         return "AttributeMessage{" +
-                "schemeId='" + schemeId + '\'' +
-                ", mumberId='" + mumberId + '\'' +
-                ", attributeId='" + attributeId + '\'' +
+                "schemeId=" + schemeId +
+                ", mumberId=" + mumberId +
+                ", attributeId=" + attributeId +
+                ", attributeName='" + attributeName + '\'' +
                 ", startUp=" + startUp +
                 ", endUp=" + endUp +
                 ", runTime=" + runTime +
@@ -28,6 +30,14 @@ public class AttributeMessage {
 
     public int getSchemeId() {
         return schemeId;
+    }
+
+    public String getAttributeName() {
+        return attributeName;
+    }
+
+    public void setAttributeName(String attributeName) {
+        this.attributeName = attributeName;
     }
 
     public void setSchemeId(int schemeId) {
