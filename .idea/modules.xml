@@ -5,8 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Eureka-reproduce/Eureka-reproduce.iml" filepath="$PROJECT_DIR$/Eureka-reproduce/Eureka-reproduce.iml" />
       <module fileurl="file://$PROJECT_DIR$/clientFeign/clientFeign.iml" filepath="$PROJECT_DIR$/clientFeign/clientFeign.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-client/service-client.iml" filepath="$PROJECT_DIR$/service-client/service-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-interface/service-interface.iml" filepath="$PROJECT_DIR$/service-interface/service-interface.iml" />
     </modules>
   </component>
 </project>

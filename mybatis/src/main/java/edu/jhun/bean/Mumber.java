@@ -13,6 +13,8 @@ public class Mumber {
     public int mumberId;
     public ArrayList<Attribute> attributeList;
 
+    public Mumber(){}
+
     @Override
     public String toString() {
         return "Mumber{" +

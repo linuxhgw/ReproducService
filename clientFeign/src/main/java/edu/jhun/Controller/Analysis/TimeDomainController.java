@@ -1,6 +1,7 @@
 package edu.jhun.Controller.Analysis;
 
 
+import com.alibaba.fastjson.JSON;
 import edu.jhun.Service.Analysis.TimeDomainAnalysisService;
 import edu.jhun.bean.AttributeMessage;
 import edu.jhun.bean.TimeDomainIndex;
@@ -19,7 +20,8 @@ public class TimeDomainController {
     TimeDomainAnalysisService timeDomainAnalysisService;
 
     @GetMapping("getTimeDomainAnalysis")
-    TimeDomainIndex getTimeDomainAnalysis(@RequestParam("atrr") AttributeMessage atrr){
+    TimeDomainIndex getTimeDomainAnalysis(@RequestParam("atrr") String atrr){
+        AttributeMessage parse= JSON.parseObject(atrr,AttributeMessage.class);
         return timeDomainAnalysisService.getTimeDomainAnalysis(atrr);
     }
 }

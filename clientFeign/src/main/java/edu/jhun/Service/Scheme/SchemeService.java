@@ -14,7 +14,6 @@ import java.util.List;
  */
 @FeignClient("service-client")
 public interface SchemeService {
-    @ResponseBody
     @GetMapping(value = "/getSchemeList")
     List<Scheme> getSchemeList();
     @GetMapping("getSchemeMessage")

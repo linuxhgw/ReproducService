@@ -27,11 +27,7 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>edu.jhun</groupId>
-            <artifactId>service-interface</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
         <dependency>
             <groupId>edu.jhun</groupId>
             <artifactId>mybatis</artifactId>
@@ -46,7 +42,11 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.40</version>
-        </dependency>
+        </dependency><dependency>
+        <groupId>edu.jhun</groupId>
+        <artifactId>service</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
 
     </dependencies>
 

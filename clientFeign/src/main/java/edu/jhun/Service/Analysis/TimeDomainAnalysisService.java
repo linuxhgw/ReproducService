@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient("service-client")
 public interface TimeDomainAnalysisService {
     @GetMapping("getTimeDomainAnalysis")
-    TimeDomainIndex getTimeDomainAnalysis(@RequestParam("atrr") AttributeMessage atrr);
+    TimeDomainIndex getTimeDomainAnalysis(@RequestParam("atrr") String atrr);
 }

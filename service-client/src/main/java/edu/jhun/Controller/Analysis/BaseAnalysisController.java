@@ -1,7 +1,7 @@
 package edu.jhun.Controller.Analysis;
 
 import com.alibaba.fastjson.JSON;
-import edu.jhun.api.Analysis.BaseAnalysisService;
+import edu.jhun.Service.Analysis.BaseAnalysisService;
 import edu.jhun.bean.AttributeMessage;
 import edu.jhun.bean.BaseIndex;
 import org.springframework.beans.factory.annotation.Autowired;

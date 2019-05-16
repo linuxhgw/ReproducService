@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/clientFeign/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/service-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/service/pom.xml" />
       </list>
     </option>
   </component>

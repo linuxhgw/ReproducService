@@ -1,6 +1,7 @@
 package edu.jhun.Controller.Analysis;
 
 
+import com.alibaba.fastjson.JSON;
 import edu.jhun.Service.Analysis.BaseAnalysisService;
 import edu.jhun.bean.AttributeMessage;
 import edu.jhun.bean.BaseIndex;
@@ -17,7 +18,8 @@ public class BaseAnalysisController {
     @Autowired
     BaseAnalysisService baseService;
     @GetMapping("getBaseAnalysis")
-    BaseIndex getBaseAnalysis(@RequestParam("atrr") AttributeMessage atrr){
+    BaseIndex getBaseAnalysis(@RequestParam("atrr") String atrr){
+        AttributeMessage parse= JSON.parseObject(atrr,AttributeMessage.class);
         return baseService.getBaseAnalysis(atrr);
     }
 }

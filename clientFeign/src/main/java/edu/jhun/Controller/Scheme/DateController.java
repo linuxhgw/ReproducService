@@ -1,6 +1,7 @@
 package edu.jhun.Controller.Scheme;
 
 
+import com.alibaba.fastjson.JSON;
 import edu.jhun.Service.Scheme.DateService;
 import edu.jhun.bean.AttributeMessage;
 import edu.jhun.bean.OutValue;
@@ -27,7 +28,8 @@ public class DateController {
     }
 
     @GetMapping("getDate")
-    List<OutValue> getDate(@RequestParam("atrr") AttributeMessage atrr){
-      return   dateService.getDate(atrr);
+    List<OutValue> getDate(@RequestParam("atrr") String atrr){
+        AttributeMessage parse= JSON.parseObject(atrr,AttributeMessage.class);
+        return   dateService.getDate(atrr);
     }
 }

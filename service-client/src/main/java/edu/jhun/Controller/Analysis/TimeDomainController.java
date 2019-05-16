@@ -1,7 +1,7 @@
 package edu.jhun.Controller.Analysis;
 
 import com.alibaba.fastjson.JSON;
-import edu.jhun.api.Analysis.TimeDomainAnalysisService;
+import edu.jhun.Service.Analysis.TimeDomainAnalysisService;
 import edu.jhun.bean.AttributeMessage;
 import edu.jhun.bean.TimeDomainIndex;
 import org.springframework.beans.factory.annotation.Autowired;

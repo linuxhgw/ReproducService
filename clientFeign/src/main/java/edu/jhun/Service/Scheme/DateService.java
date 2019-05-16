@@ -16,6 +16,6 @@ public interface DateService {
     @GetMapping("getSchemeRunTime")
     int[] getSchemeRunTime(@RequestParam ("schemeId")int schemeId);
     @GetMapping("getDate")
-    List<OutValue> getDate(@RequestParam ("atrr")AttributeMessage atrr);
+    List<OutValue> getDate(@RequestParam ("atrr")String atrr);
 
 }

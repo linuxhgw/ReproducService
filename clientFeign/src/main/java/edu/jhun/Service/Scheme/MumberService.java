@@ -13,5 +13,5 @@ import java.util.List;
 @FeignClient("service-client")
 public interface MumberService {
     @GetMapping("getMumber")
-    List<Mumber> getMumber(@RequestParam("scheme") int schemeId);
+    List<Mumber> getMumber(@RequestParam("schemeId") int schemeId);
 }

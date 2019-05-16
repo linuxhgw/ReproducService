@@ -2,7 +2,7 @@ package edu.jhun.Controller.Test;
 
 //import edu.jhun.Service.TestService;
 
-import edu.jhun.api.Test.add;
+import edu.jhun.Service.Test.add;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 

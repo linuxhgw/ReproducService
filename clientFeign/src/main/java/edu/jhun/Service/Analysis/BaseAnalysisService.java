@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient("service-client")
 public interface BaseAnalysisService {
      @GetMapping("getBaseAnalysis")
-     BaseIndex getBaseAnalysis(@RequestParam("atrr") AttributeMessage atrr);
+     BaseIndex getBaseAnalysis(@RequestParam("atrr") String atrr);
 }
