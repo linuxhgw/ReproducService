@@ -1,0 +1,17 @@
+
+server:
+  port: 8888
+spring:
+  application:
+    name: api-gateway-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8861/eureka
+  instance:
+    prefer-ip-address: true
+zuul:
+  routes:
+    route-map2:
+      path: /route-map2/**
+      url: http://localhost:8664/

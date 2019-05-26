@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>edu.jhun</groupId>
-	<artifactId>feign</artifactId>
+	<artifactId>clientfeign</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>feign</name>
+	<name>clientfeign</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

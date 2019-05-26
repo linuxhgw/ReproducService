@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 
 
-@FeignClient("service-client")
+@FeignClient(value = "service-client",fallback = Hystrix.class)
 public interface TestService {
 
-    @RequestMapping(method = RequestMethod.GET ,value = "/message")
-     String add(@RequestParam(value = "message") String message );
+    @RequestMapping(method = RequestMethod.GET, value = "/message")
+    String add(@RequestParam(value = "message") String message);
 
     @GetMapping("/add")
-    int jiafa(@RequestParam(value = "a") int a,@RequestParam(value = "b")  int b) ;
+    int jiafa(@RequestParam(value = "a") int a, @RequestParam(value = "b") int b);
 }

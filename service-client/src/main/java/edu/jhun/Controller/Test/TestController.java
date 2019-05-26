@@ -32,10 +32,10 @@ public class TestController {
     }
 
 
-    @GetMapping("userone")
-    public String userone(@RequestParam("id") int id){
-        return add.userone(id);
-    }
+//    @GetMapping("userone")
+//    public String userone(@RequestParam("id") int id){
+//        return add.userone(id);
+//    }
 
 
 

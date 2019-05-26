@@ -7,21 +7,27 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="clientFeign" />
+        <module name="demo" />
         <module name="Eureka-reproduce" />
+        <module name="feign" />
         <module name="mybatis" />
         <module name="service" />
         <module name="service-client" />
         <module name="service-interface" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="client" target="1.8" />
       <module name="clientFeign" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="Eureka-reproduce" target="1.8" />
+      <module name="feign" target="1.8" />
       <module name="mybatis" target="1.8" />
       <module name="service" target="1.8" />
       <module name="service-client" target="1.8" />
       <module name="service-interface" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

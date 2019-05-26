@@ -3,10 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Eureka-reproduce/Eureka-reproduce.iml" filepath="$PROJECT_DIR$/Eureka-reproduce/Eureka-reproduce.iml" />
-      <module fileurl="file://$PROJECT_DIR$/clientFeign/clientFeign.iml" filepath="$PROJECT_DIR$/clientFeign/clientFeign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clientFeign/feign.iml" filepath="$PROJECT_DIR$/clientFeign/feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-client/service-client.iml" filepath="$PROJECT_DIR$/service-client/service-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
     </modules>
   </component>
 </project>

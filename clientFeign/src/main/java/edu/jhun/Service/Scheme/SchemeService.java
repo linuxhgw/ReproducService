@@ -1,5 +1,6 @@
 package edu.jhun.Service.Scheme;
 
+import edu.jhun.Service.Test.Hystrix;
 import edu.jhun.bean.Scheme;
 import edu.jhun.bean.SchemeMessage;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -12,10 +13,10 @@ import java.util.List;
 /**
  * Created by hgw on 2019/4/29.
  */
-@FeignClient("service-client")
+@FeignClient(value = "service-client",fallback = Hystrix.class)
 public interface SchemeService {
     @GetMapping(value = "/getSchemeList")
     List<Scheme> getSchemeList();
     @GetMapping("getSchemeMessage")
-    SchemeMessage getSchemeMessage(@RequestParam("schemeId")int schemeId);
+    SchemeMessage getSchemeMessage(@RequestParam("schemeId") int schemeId);
 }

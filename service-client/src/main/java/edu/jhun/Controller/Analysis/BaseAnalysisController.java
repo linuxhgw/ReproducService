@@ -1,8 +1,6 @@
 package edu.jhun.Controller.Analysis;
 
-import com.alibaba.fastjson.JSON;
 import edu.jhun.Service.Analysis.BaseAnalysisService;
-import edu.jhun.bean.AttributeMessage;
 import edu.jhun.bean.BaseIndex;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BaseAnalysisController {
     @Autowired
     BaseAnalysisService baseService;
+
     @GetMapping("/getBaseAnalysis")
     BaseIndex getBaseAnalysis(@RequestParam("atrr") String atrr){
 
